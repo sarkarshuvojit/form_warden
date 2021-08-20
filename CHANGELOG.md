@@ -1,3 +1,8 @@
+## [1.0.2] - 20/08/2021
+
+* readme updated
+
+
 ## [1.0.1] - 20/08/2021
 
 * readme & example updated
