@@ -28,31 +28,33 @@ void main() {
 
   test("test warden: 10 < x < 100", () {
     ValidatorFunction greaterThanTen = (value) {
-      if (value is int && value > 10) {
+      int _value = int.parse(value);
+      if (_value > 10) {
         return null;
       }
       return "Must be greater than 10";
     };
     ValidatorFunction lessThanHundred = (value) {
-      if (value is int && value < 100) {
+      int _value = int.parse(value);
+      if (_value < 100) {
         return null;
       }
       return "Must be less than 100";
     };
-    ValidatorFunction warden = createWarden([greaterThanTen, lessThanHundred]);
+    dynamic warden = createWarden([greaterThanTen, lessThanHundred]);
 
     // Invalid
-    expect(warden(5) is String, true);
-    expect(warden(111) is String, true);
-    expect(warden(200) is String, true);
-    expect(warden(4) is String, true);
-    expect(warden(3) is String, true);
+    expect(warden("5") is String, true);
+    expect(warden("111") is String, true);
+    expect(warden("200") is String, true);
+    expect(warden("4") is String, true);
+    expect(warden("3") is String, true);
 
     // Valid
-    expect(warden(11), null);
-    expect(warden(50), null);
-    expect(warden(80), null);
-    expect(warden(99), null);
+    expect(warden("11"), null);
+    expect(warden("50"), null);
+    expect(warden("80"), null);
+    expect(warden("99"), null);
   });
 
 }
