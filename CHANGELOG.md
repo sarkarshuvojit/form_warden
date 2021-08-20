@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - 20/08/2021
 
-* TODO: Describe initial release.
+* createWarden created
+* two pre-built validators included (required, email)
