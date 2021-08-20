@@ -1,6 +1,6 @@
 # form_warden
 
-A very simple package to help you write robust, resusable and extendable validations to go with your [Flutter Forms](https://flutter.dev/docs/cookbook/forms/validation).
+A very simple package to help you write robust, reusable and extendable validations to go with your [Flutter Forms](https://flutter.dev/docs/cookbook/forms/validation).
 
 [![Alt text](https://raw.githubusercontent.com/sarkarshuvojit/form_warden/main/example/warden.png "Example Application")](https://github.com/sarkarshuvojit/form_warden/tree/main/example)
 
