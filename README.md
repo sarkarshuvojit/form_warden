@@ -1,8 +1,8 @@
-
 # form_warden
 
 A very simple package to help you write robust, resusable and extendable validations to go with your [Flutter Forms](https://flutter.dev/docs/cookbook/forms/validation).
 
+![Alt text](example/warden.png?raw=true "Optional Title")
 
 ## Installation
 
@@ -18,7 +18,6 @@ import 'package:form_warden/form_warden.dart';
 #### Required field (inbuilt-validator)
 
 ```dart
-
 TextFormField(
     autovalidateMode: AutovalidateMode.onUserInteraction,
     validator: createWarden([Validators.required]),
@@ -34,7 +33,6 @@ TextFormField(
 #### Required email field (using inbuilt validator)
 
 ```dart
-
 TextFormField(
     autovalidateMode: AutovalidateMode.onUserInteraction,
     validator: createWarden([Validators.required, Validators.email]),
@@ -44,12 +42,11 @@ TextFormField(
     ),
     onSaved: null,
 ),
-
 ```
 
 #### Custom validator
 
-```
+```dart
 ValidatorFunction greaterThanTen = (value) {
     if (value is int && value > 10) {
         return null;
@@ -59,7 +56,6 @@ ValidatorFunction greaterThanTen = (value) {
 ```
 
 ```dart
-
 TextFormField(
     autovalidateMode: AutovalidateMode.onUserInteraction,
     validator: createWarden([greaterThanTen]),
@@ -68,13 +64,12 @@ TextFormField(
         labelText: f.label,
     ),
     onSaved: null,
-),
-
+)
 ```
 
 #### Club multiple validators together to create robust validators
 
-```
+```dart
 ValidatorFunction greaterThanTen = (value) {
     if (value is int && value > 10) {
         return null;
@@ -99,13 +94,12 @@ TextFormField(
         labelText: f.label,
     ),
     onSaved: null,
-),
-
+)
 ```
 
 #### Using higher order functions create configurable validators
 
-```
+```dart
 ValidatorFunction between(int lowerLimit, int upperLimit) {
   ValidatorFunction greaterThanLowerLimit = (dynamic? value) {
     if (value.isEmpty) return null;
@@ -118,7 +112,6 @@ ValidatorFunction between(int lowerLimit, int upperLimit) {
 ```
 
 ```dart
-
 TextFormField(
     autovalidateMode: AutovalidateMode.onUserInteraction,
     validator: createWarden([between(10, 100)]),
@@ -127,7 +120,7 @@ TextFormField(
         labelText: f.label,
     ),
     onSaved: null,
-),
+)
 
 ```
 ## License
