@@ -2,8 +2,8 @@ library form_warden;
 
 typedef ValidatorFunction = dynamic? Function(dynamic? value);
 
-ValidatorFunction createWarden(Iterable<ValidatorFunction> validators) {
-  dynamic validatorFunction(dynamic value) {
+createWarden(Iterable<ValidatorFunction> validators) {
+  String? validatorFunction(String? value) {
     for (Function validator in validators) {
       dynamic validatorResult = validator(value);
       if (validatorResult != null) {
