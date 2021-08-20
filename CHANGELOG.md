@@ -1,3 +1,7 @@
+## [1.0.1] - 20/08/2021
+
+* readme & example updated
+
 ## [1.0.0] - 20/08/2021
 
 * createWarden created
