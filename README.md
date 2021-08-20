@@ -2,7 +2,7 @@
 
 A very simple package to help you write robust, resusable and extendable validations to go with your [Flutter Forms](https://flutter.dev/docs/cookbook/forms/validation).
 
-![Alt text](example/warden.png?raw=true "Optional Title")
+![Alt text](https://raw.githubusercontent.com/sarkarshuvojit/form_warden/main/example/warden.png "Optional Title")
 
 ## Installation
 
