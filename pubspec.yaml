@@ -1,6 +1,6 @@
 name: form_warden
 description: A very simple package to help you write robust, resusable and extendable validations to go with your Flutter Forms.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/sarkarshuvojit/form_warden
 
 environment:
