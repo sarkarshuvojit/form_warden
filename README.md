@@ -11,7 +11,13 @@ Each block will have it's own logic, a set of args to create dynamic validators 
 
 ![Building Block](docs/images/single-validator.svg)
 
+There are simple ones, configurable ones and even you can create validations aligned to the domain of the app.
+
 ![Building Block](docs/images/building-blocks.svg)
+
+### Creating a warden
+
+A warden will be a collection of validation blocks. Examples of enum & email pattern checking is added below.
 
 ![Building Block](docs/images/enum.svg)
 
