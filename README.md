@@ -2,6 +2,21 @@
 
 A very simple package to help you write robust, reusable and extendable validations to go with your [Flutter Forms](https://flutter.dev/docs/cookbook/forms/validation).
 
+## How it works
+
+### Building Blocks
+
+Create simple or complex blocks of validation, and compose those building blocks to create flutter validators.
+Each block will have it's own logic, a set of args to create dynamic validators & specific error messages for each block.
+
+[![Building Block](docs/images/single-validator.svg)]
+
+[![Building Block](docs/images/building-blocks.svg)]
+
+[![Building Block](docs/images/enum.svg)]
+
+[![Building Block](docs/images/email.svg)]
+
 [![Alt text](https://raw.githubusercontent.com/sarkarshuvojit/form_warden/main/example/warden.png "Example Application")](https://github.com/sarkarshuvojit/form_warden/tree/main/example)
 
 ## Installation
