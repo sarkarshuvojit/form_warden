@@ -15,4 +15,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-publish_to: https://pub.dev
