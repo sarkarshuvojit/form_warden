@@ -4,6 +4,28 @@ A very simple package to help you write robust, reusable and extendable validati
 
 [![Alt text](https://raw.githubusercontent.com/sarkarshuvojit/form_warden/main/example/warden.png "Example Application")](https://github.com/sarkarshuvojit/form_warden/tree/main/example)
 
+## How it works
+
+### Building Blocks
+
+Create simple or complex blocks of validation, and compose those building blocks to create flutter validators.
+Each block will have it's own logic, a set of args to create dynamic validators & specific error messages for each block.
+
+<img src="docs/images/single-validator.svg" width="450">
+
+There are simple ones, configurable ones and even you can create validations aligned to the domain of the app.
+
+![Building Block](docs/images/building-blocks.svg)
+
+### Creating a warden
+
+A warden will be a collection of validation blocks. Examples of enum & email pattern checking is added below.
+
+![Building Block](docs/images/enum.svg)
+
+![Building Block](docs/images/email.svg)
+
+
 ## Installation
 
 To use this package, add `form_warden` as a [dependency in your pubspec.yaml](https://flutter.dev/docs/development/packages-and-plugins/using-packages) file.
