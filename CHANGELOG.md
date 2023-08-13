@@ -1,5 +1,9 @@
 ## [1.0.2] - 20/08/2021
 
+* Readme updated to include HLD
+
+## [1.0.2] - 20/08/2021
+
 * readme updated
 
 
