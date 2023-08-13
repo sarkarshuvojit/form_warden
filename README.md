@@ -11,8 +11,7 @@ A very simple package to help you write robust, reusable and extendable validati
 Create simple or complex blocks of validation, and compose those building blocks to create flutter validators.
 Each block will have it's own logic, a set of args to create dynamic validators & specific error messages for each block.
 
-<img src="docs/images/single-validator.svg" width="250">
-![Building Block](docs/images/single-validator.svg)
+<img src="docs/images/single-validator.svg" width="450">
 
 There are simple ones, configurable ones and even you can create validations aligned to the domain of the app.
 
